@@ -1,0 +1,288 @@
+* {
+  font-family: "New Rocker", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: black;
+}
+
+.header {
+  display: flex;
+  position: fixed;
+  height: 10vh;
+  top: 0;
+  width: 100vw;
+  justify-content: end;
+  padding: 0 5vw;
+  background-color: black;
+  border-bottom: 2px solid blueviolet;
+}
+.conteiner {
+  margin-top: 12vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  background-color: black;
+}
+.conteiner h2 {
+  color: red;
+}
+.nav-menu {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  height: 100%;
+  cursor:pointer;
+}
+.nav-menu li {
+  list-style: none;
+  font-size: 25px;
+}
+.nav-menu li a:visited {
+  color: blueviolet;
+}
+.icone {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: absolute;
+  left: 48.5%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.icone img {
+  width: 50px;
+  height: 50px;
+}
+.icone h1 {
+  color: blueviolet;
+}
+
+.cardConteiner {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  gap: 20px;
+}
+
+.car1 {
+  background-image: url(../img/car1.png);
+}
+.card {
+  width: 45%;
+  aspect-ratio: 1/1;
+  background-size: cover;
+  background-color: blue;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor:pointer;
+}
+.car1:hover {
+  background-image: url(../img/car1.1.png);
+}
+.car2 {
+  background-image: url(../img/car2.png);
+}
+.car2:hover {
+  background-image: url(../img/car2.1.png);
+}
+.car3 {
+  background-image: url(../img/car3.png);
+}
+.car3:hover {
+  background-image: url(../img/car3.1.png);
+}
+.car4 {
+  background-image: url(../img/car4.png);
+}
+.car4:hover {
+  background-image: url(../img/car4.1.png);
+}
+.car5 {
+  background-image: url(../img/car5.png);
+}
+.car5:hover {
+  background-image: url(../img/car5.1.png);
+}
+.car6 {
+  background-image: url(../img/car6.png);
+}
+.car6:hover {
+  background-image: url(../img/car6.1.png);
+}
+.car7 {
+  background-image: url(../img/car7.png);
+}
+.car7:hover {
+  background-image: url(../img/car7.1.png);
+}
+.car8 {
+  background-image: url(../img/car8.png);
+}
+.car8:hover {
+  background-image: url(../img/car8.1.png);
+}
+.fudido {
+  color: blueviolet;
+  padding: 5% 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 500px;
+}
+.service {
+  font-size: 30px;
+  width: 50%;
+
+  scroll-margin-top: 13vh;
+}
+.about {
+  font-size: 30px;
+  width: 50%;
+
+  scroll-margin-top: 13vh;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.contact form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.formGroup input {
+  border: none;
+  padding: 5px 10px;
+}
+
+.btn {
+  display: flex;
+  border: none;
+  background-color: blueviolet;
+  color: black;
+  padding: 20px 60px;
+  border-radius: 5px;
+  width: fit-content;
+  cursor:pointer;
+}
+footer{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 5vh 10vh ;
+ }
+ footer p{
+color: blueviolet;
+ } 
+.imgfooter{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+}
+.imgfooter img{
+width: 30px;
+cursor:pointer;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .header {
+   height: 15vh;
+   align-items: end;
+   padding: 0 0 10px 0;
+   justify-content: center;
+  }
+.conteiner{
+margin-top: 16vh;
+}
+  .icone {
+    left: 44.2%;
+    gap: 8px;
+    
+  }
+
+  .icone img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .nav-menu li {
+    font-size: 18px;
+  }
+
+  .cardConteiner {
+    width: 90%;
+  }
+
+  .card {
+    width: 100%; 
+
+  }
+
+  .service,
+  .about {
+    width: 90%;
+    font-size: 22px;
+  }
+
+  .fudido {
+    padding: 5% 5%;
+    gap: 200px;
+  }
+
+  .btn {
+    padding: 15px 40px;
+  
+  }
+  footer{
+flex-direction: column;
+padding: 3% 5%;
+gap: 10px;
+  }
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
+
+  .cardConteiner {
+    width: 60%;
+  }
+
+  
+  .card {
+    width: 30%;
+  }
+
+  .service,
+  .about {
+    width: 70%;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .cardConteiner {
+    width: 40%;
+  }
+}
